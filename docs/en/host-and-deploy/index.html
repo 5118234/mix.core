@@ -1,0 +1,137 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Host and deploy Blazor · mixcore docs</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;h1&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;host-and-deploy-blazor&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#host-and-deploy-blazor&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Host and deploy Blazor&lt;/h1&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Host and deploy Blazor · mixcore docs"/><meta property="og:type" content="website"/><meta property="og:url" content="https://mixcore.org/index.html"/><meta property="og:description" content="&lt;h1&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;host-and-deploy-blazor&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#host-and-deploy-blazor&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Host and deploy Blazor&lt;/h1&gt;
+"/><meta property="og:image" content="https://mixcore.org/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://mixcore.org/img/docusaurus.png"/><link rel="shortcut icon" href="/img/mixcore-logo-nbg.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://mixcore.org/blog/atom.xml" title="mixcore docs Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://mixcore.org/blog/feed.xml" title="mixcore docs Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/en"><img class="logo" src="/img/mixcore-logo.png" alt="mixcore docs"/><h2 class="headerTitleWithLogo">mixcore docs</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/en/intro" target="_self">Docs</a></li><li class=""><a href="/en/help" target="_self">Help</a></li><li class=""><a href="/blog/" target="_self">Blog</a></li><li class=""><a href="https://github.com/mixcore/mix.core/releases" target="_self">Download</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/mixcore/docs/tree/master/docs/host-and-deploy/index.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">Host and deploy Blazor</h1></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="host-and-deploy-blazor"></a><a href="#host-and-deploy-blazor" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Host and deploy Blazor</h1>
+<p>By <a href="https://github.com/guardrex">Luke Latham</a>, <a href="https://www.timecockpit.com">Rainer Stropek</a>, and <a href="https://github.com/danroth27">Daniel Roth</a></p>
+<p>[!INCLUDE<a href="~/includes/blazor-preview-notice.md"></a>]</p>
+<h2><a class="anchor" aria-hidden="true" id="publish-the-app"></a><a href="#publish-the-app" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Publish the app</h2>
+<p>Blazor apps are published for deployment in Release configuration with the <a href="https://docs.microsoft.com/dotnet/core/tools/dotnet-publish">dotnet publish</a> command. An IDE may handle executing the <code>dotnet publish</code> command automatically using its built-in publishing features, so it might not be necessary to manually execute the command from a command prompt depending on the development tools in use.</p>
+<pre><code class="hljs css language-console">dotnet publish -c Release
+</code></pre>
+<p><code>dotnet publish</code> triggers a <a href="https://docs.microsoft.com/dotnet/core/tools/dotnet-restore">restore</a> of the project's dependencies and <a href="https://docs.microsoft.com/dotnet/core/tools/dotnet-build">builds</a> the project before creating the assets for deployment. As part of the build process, unused methods and assemblies are removed to reduce app download size and load times. The deployment is created in the <em>/bin/Release/&lt;target-framework&gt;/publish</em> folder.</p>
+<p>The assets in the <em>publish</em> folder are deployed to the web server. Deployment might be a manual or automated process depending on the development tools in use.</p>
+<h2><a class="anchor" aria-hidden="true" id="rewrite-urls-for-correct-routing"></a><a href="#rewrite-urls-for-correct-routing" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Rewrite URLs for correct routing</h2>
+<p>Routing requests for page components in a client-side app isn't as simple as routing requests to a server-side, hosted app. Consider a client-side app with two pages:</p>
+<ul>
+<li><strong><em>Main.cshtml</em></strong> – Loads at the root of the app and contains a link to the About page (<code>href=&quot;/About&quot;</code>).</li>
+<li><strong><em>About.cshtml</em></strong> – About page.</li>
+</ul>
+<p>When the app's default document is requested using the browser's address bar (for example, <code>https://www.contoso.com/</code>):</p>
+<ol>
+<li>The browser makes a request.</li>
+<li>The default page is returned, which is usually <em>index.html</em>.</li>
+<li><em>index.html</em> bootstraps the app.</li>
+<li>Blazor's router loads and the Razor Main page (<em>Main.cshtml</em>) is displayed.</li>
+</ol>
+<p>On the Main page, selecting the link to the About page loads the About page. Selecting the link to the About page works on the client because the Blazor router stops the browser from making a request on the Internet to <code>www.contoso.com</code> for <code>/About</code> and serves the About page itself. All of the requests for internal pages <em>within the client-side app</em> work the same way: Requests don't trigger browser-based requests to server-hosted resources on the Internet. The router handles the requests internally.</p>
+<p>If a request is made using the browser's address bar for <code>www.contoso.com/About</code>, the request fails. No such resource exists on the app's Internet host, so a <em>404 Not found</em> response is returned.</p>
+<p>Because browsers make requests to Internet-based hosts for client-side pages, web servers and hosting services must rewrite all requests for resources not physically on the server to the <em>index.html</em> page. When <em>index.html</em> is returned, the app's client-side router takes over and responds with the correct resource.</p>
+<h2><a class="anchor" aria-hidden="true" id="app-base-path"></a><a href="#app-base-path" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>App base path</h2>
+<p>The app base path is the virtual app root path on the server. For example, an app that resides on the Contoso server in a virtual folder at <code>/CoolBlazorApp/</code> is reached at <code>https://www.contoso.com/CoolBlazorApp</code> and has a virtual base path of <code>/CoolBlazorApp/</code>. By setting the app base path to <code>/CoolBlazorApp/</code>, the app is made aware of where it virtually resides on the server. The app can use the app base path to construct URLs relative to the app root from a component that isn't in the root directory. This allows components that exist at different levels of the directory structure to build links to other resources at locations throughout the app. The app base path is also used to intercept hyperlink clicks where the <code>href</code> target of the link is within the app base path URI space—the Blazor router handles the internal navigation.</p>
+<p>In many hosting scenarios, the server's virtual path to the app is the root of the app. In these cases, the app base path is <code>/</code>, which is the default configuration for a Blazor app. In other hosting scenarios, such as GitHub Pages and IIS virtual directories, the app base path must be set to the server's virtual path to the app. To set the Blazor app's base path, update the <strong>&lt;base&gt;</strong> tag in <em>index.html</em> on the <strong>&lt;head&gt;</strong> tag. Change the <code>href</code> attribute value from <code>/</code> to <code>/&lt;virtual-path&gt;/</code> (the trailing slash is required), where <code>/&lt;virtual-path&gt;/</code> is the full virtual app root path on the server for the app.</p>
+<h2><a class="anchor" aria-hidden="true" id="deployment-models"></a><a href="#deployment-models" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Deployment models</h2>
+<p>There are two deployment models for Blazor apps:</p>
+<ul>
+<li><a href="#hosted-deployment-with-aspnet-core">Hosted deployment with ASP.NET Core</a> – Hosted deployment uses an ASP.NET Core app on the server to host the Blazor app.</li>
+<li><a href="#standalone-deployment">Standalone deployment</a> – Standalone deployment places the Blazor app on a static hosting web server or service, where .NET isn't used to serve the Blazor app.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="hosted-deployment-with-aspnet-core"></a><a href="#hosted-deployment-with-aspnet-core" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Hosted deployment with ASP.NET Core</h3>
+<p>In a hosted deployment, an ASP.NET Core app handles single-page application routing and Blazor app hosting. The published ASP.NET Core app, along with one or more Blazor apps that it hosts, is deployed to the web server or hosting service.</p>
+<p>To host a Blazor app, the ASP.NET Core app must:</p>
+<ul>
+<li>Reference the Blazor app project.</li>
+<li>Configure Blazor app hosting with the <code>UseBlazor</code> extension method on <a href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder">IApplicationBuilder</a> in <code>Startup.Configure</code>.</li>
+</ul>
+<pre><code class="hljs css language-csharp"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Configure</span>(<span class="hljs-params">IApplicationBuilder app, IHostingEnvironment env</span>)</span>
+{
+    <span class="hljs-keyword">if</span> (env.IsDevelopment())
+    {
+        app.UseDeveloperExceptionPage();
+    }
+
+    app.UseBlazor&lt;Client.Program&gt;();
+}
+</code></pre>
+<p>The <code>UseBlazor</code> extension method performs the following tasks:</p>
+<ul>
+<li>Configure <a href="https://docs.microsoft.com/aspnet/core/fundamentals/static-files">Static File Middleware</a> to serve Blazor's static assets from the <em>dist</em> folder. In the Development environment, the files in <em>wwwroot</em> are served.</li>
+<li>Configure single-page application routing for resource requests that aren't for actual files that exist on disk. The app serves the default document (<em>index.html</em>) for any request that hasn't been served by a prior Static File Middleware instance. For example, a request to receive a page from the app that should be handled by the Blazor router on the client is rewritten into a request for the <em>index.html</em> page.</li>
+</ul>
+<p>When the ASP.NET Core app is published, the Blazor app is included in the published output so that the ASP.NET Core app and the Blazor app can be deployed together. For more information on ASP.NET Core app hosting and deployment, see <a href="https://docs.microsoft.com/aspnet/core/host-and-deploy">Host and deploy ASP.NET Core</a>.</p>
+<p>For information on deploying to Azure App Service, see the following topics:</p>
+<p><a href="https://docs.microsoft.com/aspnet/core/tutorials/publish-to-azure-webapp-using-vs">Publish to Azure with Visual Studio</a>  <br>
+Learn how to publish an ASP.NET Core-hosted Blazor app to Azure App Service using Visual Studio.</p>
+<p><a href="https://docs.microsoft.com/aspnet/core/tutorials/publish-to-azure-webapp-using-cli">Publish to Azure with CLI tools</a>  <br>
+Learn how to publish an ASP.NET Core app to Azure App Service using the Git command-line client.</p>
+<h3><a class="anchor" aria-hidden="true" id="standalone-deployment"></a><a href="#standalone-deployment" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Standalone deployment</h3>
+<p>In a standalone deployment, only the Blazor client-side app is deployed to the server or hosting service. An ASP.NET Core server-side app isn't used to host the Blazor app. The Blazor app's static files are requested by the browser directly from the static file web server or service.</p>
+<p>When deploying a standalone Blazor app from the published <em>dist</em> folder, any web server or hosting service that serves static files can host a Blazor app.</p>
+<h4><a class="anchor" aria-hidden="true" id="iis"></a><a href="#iis" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>IIS</h4>
+<p>IIS is a capable static file server for Blazor apps. To configure IIS to host Blazor, see <a href="https://docs.microsoft.com/iis/manage/creating-websites/scenario-build-a-static-website-on-iis">Build a Static Website on IIS</a>.</p>
+<p>Published assets are created in the <em>\bin\Release\&lt;target-framework&gt;\publish</em> folder. Host the contents of the <em>publish</em> folder on the web server or hosting service.</p>
+<p><strong>web.config</strong></p>
+<p>When a Blazor project is published, a <em>web.config</em> file is created with the following IIS configuration:</p>
+<ul>
+<li>MIME types are set for the following file extensions:
+<ul>
+<li><em>*.dll</em>: <code>application/octet-stream</code></li>
+<li><em>*.json</em>: <code>application/json</code></li>
+<li><em>*.wasm</em>: <code>application/wasm</code></li>
+<li><em>*.woff</em>: <code>application/font-woff</code></li>
+<li><em>*.woff2</em>: <code>application/font-woff</code></li>
+</ul></li>
+<li>HTTP compression is enabled for the following MIME types:
+<ul>
+<li><code>application/octet-stream</code></li>
+<li><code>application/wasm</code></li>
+</ul></li>
+<li>URL Rewrite Module rules are established:
+<ul>
+<li>Serve the sub-directory where the app's static assets reside (<em>&lt;assembly_name&gt;\dist\&lt;path_requested&gt;</em>).</li>
+<li>Create SPA fallback routing so that requests for non-file assets are redirected to the app's default document in its static assets folder (<em>&lt;assembly_name&gt;\dist\index.html</em>).</li>
+</ul></li>
+</ul>
+<p><strong>Install the URL Rewrite Module</strong></p>
+<p>The <a href="https://www.iis.net/downloads/microsoft/url-rewrite">URL Rewrite Module</a> is required to rewrite URLs. The module isn't installed by default, and it isn't available for install as an Web Server (IIS) role service feature. The module must be downloaded from the IIS website. Use the Web Platform Installer to install the module:</p>
+<ol>
+<li>Locally, navigate to the <a href="https://www.iis.net/downloads/microsoft/url-rewrite#additionalDownloads">URL Rewrite Module downloads page</a>. For the English version, select <strong>WebPI</strong> to download the WebPI installer. For other languages, select the appropriate architecture for the server (x86/x64) to download the installer.</li>
+<li>Copy the installer to the server. Run the installer. Select the <strong>Install</strong> button and accept the license terms. A server restart isn't required after the install completes.</li>
+</ol>
+<p><strong>Configure the website</strong></p>
+<p>Set the website's <strong>Physical path</strong> to the Blazor app's folder. The folder contains:</p>
+<ul>
+<li>The <em>web.config</em> file that IIS uses to configure the website, including the required redirect rules and file content types.</li>
+<li>The app's static asset folder.</li>
+</ul>
+<p><strong>Troubleshooting</strong></p>
+<p>If a <em>500 Internal Server Error</em> is received and IIS Manager throws errors when attempting to access the website's configuration, confirm that the URL Rewrite Module is installed. When the module isn't installed, the <em>web.config</em> file can't be parsed by IIS. This prevents the IIS Manager from loading the website's configuration and the website from serving Blazor's static files.</p>
+<p>For more information on troubleshooting deployments to IIS, see <a href="https://docs.microsoft.com/aspnet/core/host-and-deploy/iis/troubleshoot">Troubleshoot ASP.NET Core on IIS</a>.</p>
+<h4><a class="anchor" aria-hidden="true" id="nginx"></a><a href="#nginx" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Nginx</h4>
+<p>The following <em>nginx.conf</em> file is simplified to show how to configure Nginx to send the <em>Index.html</em> file whenever it can't find a corresponding file on disk.</p>
+<pre><code class="hljs">events { }
+http {
+   <span class="hljs-built_in"> server </span>{
+        listen 80;
+
+        location / {
+            root /usr/share/nginx/html;
+            try_files <span class="hljs-variable">$uri</span> <span class="hljs-variable">$uri</span>/ /Index.html =404;
+        }
+    }
+}
+</code></pre>
+<p>For more information on production Nginx web server configuration, see <a href="https://docs.nginx.com/nginx/admin-guide/basic-functionality/managing-configuration-files/">Creating NGINX Plus and NGINX Configuration Files</a>.</p>
+<h4><a class="anchor" aria-hidden="true" id="nginx-in-docker"></a><a href="#nginx-in-docker" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Nginx in Docker</h4>
+<p>To host Blazor in Docker using Nginx, setup the Dockerfile to use the Alpine-based Nginx image. Update the Dockerfile to copy the <em>nginx.config</em> file into the container.</p>
+<p>Add one line to the Dockerfile, as shown in the following example:</p>
+<pre><code class="hljs">FROM <span class="hljs-string">nginx:</span>alpine
+COPY .<span class="hljs-regexp">/bin/</span>Release<span class="hljs-regexp">/netstandard2.0/</span>publish <span class="hljs-regexp">/usr/</span>share<span class="hljs-regexp">/nginx/</span>html/
+COPY nginx.conf <span class="hljs-regexp">/etc/</span>nginx/nginx.conf
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="github-pages"></a><a href="#github-pages" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>GitHub Pages</h4>
+<p>To handle URL rewrites, add a <em>404.html</em> file with a script that handles redirecting the request to the <em>index.html</em> page. For an example implementation provided by the community, see <a href="http://spa-github-pages.rafrex.com/">Single Page Apps for GitHub Pages</a> (<a href="https://github.com/rafrex/spa-github-pages#readme">rafrex/spa-github-pages on GitHub</a>). An example using the community approach can be seen at <a href="https://github.com/blazor-demo/blazor-demo.github.io">blazor-demo/blazor-demo.github.io on GitHub</a> (<a href="https://blazor-demo.github.io/">live site</a>).</p>
+<p>When using a project site instead of an organization site, update the <strong>&lt;base&gt;</strong> tag in <em>index.html</em>. Change the <code>href</code> attribute value from <code>/</code> to <code>/&lt;repository-name&gt;</code>, where <code>&lt;repository-name&gt;</code> is the GitHub repository name.</p>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#publish-the-app">Publish the app</a></li><li><a href="#rewrite-urls-for-correct-routing">Rewrite URLs for correct routing</a></li><li><a href="#app-base-path">App base path</a></li><li><a href="#deployment-models">Deployment models</a><ul class="toc-headings"><li><a href="#hosted-deployment-with-aspnet-core">Hosted deployment with ASP.NET Core</a></li><li><a href="#standalone-deployment">Standalone deployment</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/mixcore-logo.png" alt="mixcore docs" width="66"/></a><div class="footerSection"><h5>Docs</h5><a href="
+                /docs/en/installation">Getting Started</a><a href="
+                /docs/en/versioning">Versioning</a><a href="
+                /docs/en/translation">Localization</a><a href="
+                /docs/en/search">Adding Search</a></div><div class="footerSection"><h5>Community</h5><a href="/en/users">User Showcase</a></div><div class="footerSection"><h5>Social</h5><div class="social"><a class="github-button" href="https://github.com/mixcore/mix.core" data-count-href="https://github.com/mixcore/mix.core/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">mix.core</a></div></div></section><section class="copyright"><span>Copyright © 2019 mixcore</span></section></footer></div></body></html>

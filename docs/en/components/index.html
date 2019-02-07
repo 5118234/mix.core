@@ -1,0 +1,256 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Blazor components · mixcore docs</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;h1&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;blazor-components&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#blazor-components&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Blazor components&lt;/h1&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Blazor components · mixcore docs"/><meta property="og:type" content="website"/><meta property="og:url" content="https://mixcore.org/index.html"/><meta property="og:description" content="&lt;h1&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;blazor-components&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#blazor-components&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Blazor components&lt;/h1&gt;
+"/><meta property="og:image" content="https://mixcore.org/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://mixcore.org/img/docusaurus.png"/><link rel="shortcut icon" href="/img/mixcore-logo-nbg.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://mixcore.org/blog/atom.xml" title="mixcore docs Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://mixcore.org/blog/feed.xml" title="mixcore docs Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/en"><img class="logo" src="/img/mixcore-logo.png" alt="mixcore docs"/><h2 class="headerTitleWithLogo">mixcore docs</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/en/intro" target="_self">Docs</a></li><li class=""><a href="/en/help" target="_self">Help</a></li><li class=""><a href="/blog/" target="_self">Blog</a></li><li class=""><a href="https://github.com/mixcore/mix.core/releases" target="_self">Download</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/mixcore/docs/tree/master/docs/components/index.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">Blazor components</h1></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="blazor-components"></a><a href="#blazor-components" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Blazor components</h1>
+<p>By <a href="https://github.com/guardrex">Luke Latham</a> and <a href="https://github.com/danroth27">Daniel Roth</a></p>
+<p>[!INCLUDE<a href="~/includes/blazor-preview-notice.md"></a>]</p>
+<p><a href="https://github.com/aspnet/Blazor.Docs/tree/master/docs/components/common/samples/">View or download sample code</a> (<a href="xref:client-side/blazor/index#view-and-download-samples">how to download</a>). See the <a href="xref:client-side/blazor/get-started">Get started</a> topic for prerequisites.</p>
+<p>Blazor apps are built using <em>components</em>. A component is a self-contained chunk of user interface (UI), such as a page, dialog, or form. A component includes both the HTML markup to render along with the processing logic needed to inject data or respond to UI events. Components are flexible and lightweight, and they can be nested, reused, and shared between projects.</p>
+<h2><a class="anchor" aria-hidden="true" id="component-classes"></a><a href="#component-classes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Component classes</h2>
+<p>Blazor components are typically implemented in <em>*.cshtml</em> files using a combination of C# and HTML markup. The UI for a component is defined using HTML. Dynamic rendering logic (for example, loops, conditionals, expressions) is added using an embedded C# syntax called <a href="https://docs.microsoft.com/aspnet/core/mvc/views/razor">Razor</a>. When a Blazor app is compiled, the HTML markup and C# rendering logic are converted into a component class. The name of the generated class matches the name of the file.</p>
+<p>Members of the component class are defined in a <code>@functions</code> block (more than one <code>@functions</code> block is permissible). In the <code>@functions</code> block, component state (properties, fields) is specified along with methods for event handling or for defining other component logic.</p>
+<p>Component members can then be used as part of the component's rendering logic using C# expressions that start with <code>@</code>. For example, a C# field is rendered by prefixing <code>@</code> to the field name. The following example evaluates and renders:</p>
+<ul>
+<li><code>_headingFontStyle</code> to the CSS property value for <code>font-style</code>.</li>
+<li><code>_headingText</code> to the content of the <code>&lt;h1&gt;</code> element.</li>
+</ul>
+<pre><code class="hljs css language-cshtml">&lt;h1 style=<span class="hljs-string">"font-style:@_headingFontStyle"</span>&gt;<span class="hljs-keyword">@_headingText</span>&lt;/h1&gt;
+
+<span class="hljs-keyword">@functions</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-built_in">string</span> _headingFontStyle = <span class="hljs-string">"italic"</span>;
+    <span class="hljs-keyword">private</span> <span class="hljs-built_in">string</span> _headingText = <span class="hljs-string">"Put on your new Blazor!"</span>;
+}
+</code></pre>
+<p>After the component is initially rendered, the component regenerates its render tree in response to events. Blazor then compares the new render tree against the previous one and applies any modifications to the browser's Document Object Model (DOM).</p>
+<h2><a class="anchor" aria-hidden="true" id="using-components"></a><a href="#using-components" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Using components</h2>
+<p>Components can include other components by declaring them using HTML element syntax. The markup for using a component looks like an HTML tag where the name of the tag is the component type.</p>
+<p>The following markup renders a <code>HeadingComponent</code> (<em>HeadingComponent.cshtml</em>) instance:</p>
+<p>[!code-cshtml<a href="common/samples/2.x/ComponentsSample/Pages/Index.cshtml?start=11&amp;end=11"></a>]</p>
+<h2><a class="anchor" aria-hidden="true" id="component-parameters"></a><a href="#component-parameters" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Component parameters</h2>
+<p>Components can have <em>component parameters</em>, which are defined using <em>non-public</em> properties on the component class decorated with <code>[Parameter]</code>. Use attributes to specify arguments for a component in markup.</p>
+<p>In the following example, the <code>ParentComponent</code> sets the value of the <code>Title</code> property of the <code>ChildComponent</code>:</p>
+<p><em>ParentComponent.cshtml</em>:</p>
+<p>[!code-cshtml<a href="common/samples/2.x/ComponentsSample/Pages/ParentComponent.cshtml?start=1&amp;end=7&amp;highlight=5"></a>]</p>
+<p><em>ChildComponent.cshtml</em>:</p>
+<p>[!code-cshtml<a href="common/samples/2.x/ComponentsSample/Pages/ChildComponent.cshtml?highlight=7-8"></a>]</p>
+<h2><a class="anchor" aria-hidden="true" id="child-content"></a><a href="#child-content" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Child content</h2>
+<p>Components can set the content in another component. The assigning component provides the content between the tags that specify the receiving component. For example, a <code>ParentComponent</code> can provide content that is to be rendered by a <code>ChildComponent</code> by placing the content inside <strong>&lt;ChildComponent&gt;</strong> tags.</p>
+<p><em>ParentComponent.cshtml</em>:</p>
+<p>[!code-cshtml<a href="common/samples/2.x/ComponentsSample/Pages/ParentComponent.cshtml?start=1&amp;end=7&amp;highlight=6"></a>]</p>
+<p>The child component has a <code>ChildContent</code> property that represents a <a href="/api/Microsoft.AspNetCore.Blazor.RenderFragment.html">RenderFragment</a>. The value of <code>ChildContent</code> is positioned in the child component's markup where the content should be rendered. In the following example, the value of <code>ChildContent</code> is received from the parent component and rendered inside the Bootstrap panel's <code>panel-body</code>.</p>
+<p><em>ChildComponent.cshtml</em>:</p>
+<p>[!code-cshtml<a href="common/samples/2.x/ComponentsSample/Pages/ChildComponent.cshtml?highlight=3,10-11"></a>]</p>
+<blockquote>
+<p>[!NOTE]
+The property receiving the <code>RenderFragment</code> content must be named <code>ChildContent</code> by convention.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="data-binding"></a><a href="#data-binding" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Data binding</h2>
+<p>Data binding to both components and DOM elements is accomplished with the <code>bind</code> attribute. The following example binds the <code>ItalicsCheck</code> property to the check box's checked state:</p>
+<pre><code class="hljs css language-cshtml">&lt;input <span class="hljs-attribute">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attribute">class</span>=<span class="hljs-string">"form-check-input"</span> <span class="hljs-attribute">id</span>=<span class="hljs-string">"italicsCheck"</span> <span class="hljs-attribute">bind</span>=<span class="hljs-string">"@_italicsCheck"</span> /&gt;
+</code></pre>
+<p>When the check box is selected and cleared, the property's value is updated to <code>true</code> and <code>false</code>, respectively.</p>
+<p>The check box is updated in the UI only when the component is rendered, not in response to changing the property's value. Since components render themselves after event handler code executes, property updates are usually reflected in the UI immediately.</p>
+<p>Using <code>bind</code> with a <code>CurrentValue</code> property (<code>&lt;input bind=&quot;@CurrentValue&quot; /&gt;</code>) is essentially equivalent to the following:</p>
+<pre><code class="hljs css language-cshtml">&lt;input <span class="hljs-attr">value="@CurrentValue"</span> 
+    <span class="hljs-attr">onchange="@((UIValueEventArgs</span> __e) =&gt; <span class="hljs-attr">CurrentValue</span> = __e.Value) /&gt;
+</code></pre>
+<p>When the component is rendered, the <code>value</code> of the input element comes from the <code>CurrentValue</code> property. When the user types in the text box, the <code>onchange</code> is fired and the <code>CurrentValue</code> property is set to the changed value. In reality, the code generation is a little more complex because <code>bind</code> deals with a few cases where type conversions are performed. In principle, <code>bind</code> associates the current value of an expression with a <code>value</code> attribute and handles changes using the registered handler.</p>
+<p><strong>Format strings</strong></p>
+<p>Data binding works with <a href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a> format strings (but not other format expressions at this time, such as currency or number formats):</p>
+<pre><code class="hljs css language-cshtml">&lt;<span class="hljs-keyword">input</span> bind="@StartDate" <span class="hljs-keyword">format</span>-<span class="hljs-keyword">value</span>="yyyy-MM-dd" /&gt;
+
+@<span class="hljs-keyword">functions</span> {
+    <span class="hljs-built_in">public</span> DateTime StartDate { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; } = <span class="hljs-built_in">new</span> DateTime(<span class="hljs-number">2020</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>);
+}
+</code></pre>
+<p><strong>Component attributes</strong></p>
+<p>Binding also recognizes component attributes, where <code>bind-{property}</code> can bind a property value across components.</p>
+<p>The following parent component uses <code>ChildComponent</code> and binds the value <code>1979</code> from <code>ParentYear</code> to the child component's <code>Year</code> property:</p>
+<p>Parent component:</p>
+<pre><code class="hljs css language-cshtml">&lt;ChildComponent bind-Year="@ParentYear" /&gt;
+
+@<span class="hljs-keyword">functions</span> {
+    <span class="hljs-built_in">public</span> <span class="hljs-type">int</span> ParentYear { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; } = <span class="hljs-number">1979</span>;
+}
+</code></pre>
+<p>Child component:</p>
+<pre><code class="hljs css language-cshtml">&lt;div&gt; ... &lt;/div&gt;
+
+@functions {
+    <span class="hljs-keyword">public</span> <span class="hljs-built_in">int</span> <span class="hljs-built_in">Year</span> { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+    <span class="hljs-keyword">public</span> Action&lt;<span class="hljs-built_in">int</span>&gt; YearChanged { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+}
+</code></pre>
+<p>The <code>Year</code> parameter is bindable because it has a companion <code>YearChanged</code> event that matches the type of the <code>Year</code> parameter.</p>
+<h2><a class="anchor" aria-hidden="true" id="event-handling"></a><a href="#event-handling" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Event handling</h2>
+<p>Blazor provides event handling features. For an HTML element attribute named <code>on&lt;event&gt;</code> (for example, <code>onclick</code>, <code>onsubmit</code>) with a delegate-typed value, Blazor treats the attribute's value as an event handler. The attribute's name always starts with <code>on</code>.</p>
+<p>The following code calls the <code>UpdateHeading</code> method when the button is selected in the UI:</p>
+<pre><code class="hljs css language-cshtml">&lt;button <span class="hljs-keyword">class</span>=<span class="hljs-string">"btn btn-primary"</span> onclick=<span class="hljs-string">"@UpdateHeading"</span>&gt;
+    Update heading
+&lt;/button&gt;
+
+@functions {
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">UpdateHeading</span>(<span class="hljs-params">UIMouseEventArgs e</span>)</span>
+    {
+        ...
+    }
+}
+</code></pre>
+<p>The following code calls the <code>CheckboxChanged</code> method when the check box is changed in the UI:</p>
+<pre><code class="hljs css language-cshtml">&lt;input type=<span class="hljs-string">"checkbox"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"form-check-input"</span> onchange=<span class="hljs-string">"@CheckboxChanged"</span> /&gt;
+
+<span class="hljs-meta">@functions</span> {
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">CheckboxChanged</span><span class="hljs-params">()</span>
+    </span>{
+        ...
+    }
+}
+</code></pre>
+<p>For some events, event-specific event argument types are permitted. If access to one of these event types isn't necessary, it isn't required in the method call.</p>
+<p>The list of supported event arguments is:</p>
+<ul>
+<li>UIEventArgs</li>
+<li>UIChangeEventArgs</li>
+<li>UIKeyboardEventArgs</li>
+<li>UIMouseEventArgs</li>
+</ul>
+<p>Lambda expressions can also be used:</p>
+<pre><code class="hljs css language-cshtml">&lt;<span class="hljs-keyword">button</span> <span class="hljs-keyword">onclick</span>=<span class="hljs-string">"@(e =&gt; Console.WriteLine("</span>Hello, world!<span class="hljs-string">"))"</span>&gt;Say hello&lt;/<span class="hljs-keyword">button</span>&gt;
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="lifecycle-methods"></a><a href="#lifecycle-methods" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Lifecycle methods</h2>
+<p><code>OnInitAsync</code> and <code>OnInit</code> execute code after the component has been initialized. To perform an asynchronous operation, use <code>OnInitAsync</code> and use the <code>await</code> keyword:</p>
+<pre><code class="hljs css language-csharp"><span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">async</span> Task <span class="hljs-title">OnInitAsync</span>(<span class="hljs-params"></span>)</span>
+{
+    <span class="hljs-keyword">await</span> ...
+}
+</code></pre>
+<p>For a synchronous operation, use <code>OnInit</code>:</p>
+<pre><code class="hljs css language-csharp"><span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">void</span> <span class="hljs-title">OnInit</span>(<span class="hljs-params"></span>)</span>
+{
+    ...
+}
+</code></pre>
+<p><code>OnParametersSetAsync</code> and <code>OnParametersSet</code> are called when a component has received parameters from its parent and the values are assigned to properties. These methods are executed after <code>OnInit</code> during component initialization.</p>
+<pre><code class="hljs css language-csharp"><span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">async</span> Task <span class="hljs-title">OnParametersSetAsync</span>(<span class="hljs-params"></span>)</span>
+{
+    <span class="hljs-keyword">await</span> ...
+}
+</code></pre>
+<pre><code class="hljs css language-csharp"><span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">void</span> <span class="hljs-title">OnParametersSet</span>(<span class="hljs-params"></span>)</span>
+{
+    ...
+}
+</code></pre>
+<p><code>OnAfterRenderAsync</code> and <code>OnAfterRender</code> are called each time after a component has finished rendering. Element and component references are populated at this point. Use this stage to perform additional initialization steps using the rendered content, such as activating third-party JavaScript libraries that operate on the rendered DOM elements.</p>
+<pre><code class="hljs css language-csharp"><span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">async</span> Task <span class="hljs-title">OnAfterRenderAsync</span>(<span class="hljs-params"></span>)</span>
+{
+    <span class="hljs-keyword">await</span> ...
+}
+</code></pre>
+<pre><code class="hljs css language-csharp"><span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">void</span> <span class="hljs-title">OnAfterRender</span>(<span class="hljs-params"></span>)</span>
+{
+    ...
+}
+</code></pre>
+<p><code>SetParameters</code> can be overridden to execute code before parameters are set:</p>
+<pre><code class="hljs css language-csharp"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">void</span> <span class="hljs-title">SetParameters</span>(<span class="hljs-params">ParameterCollection parameters</span>)</span>
+{
+    ...
+
+    <span class="hljs-keyword">base</span>.SetParameters(parameters);
+}
+</code></pre>
+<p>If <code>base.SetParameters</code> isn't invoked, the custom code can interpret the incoming parameters value in any way required. For example, the incoming parameters aren't required to be assigned to the properties on the class.</p>
+<p><code>ShouldRender</code> can be overridden to suppress refreshing of the UI. If the implementation returns <code>true</code>, the UI is refreshed. Even if <code>ShouldRender</code> is overridden, the component is always initially rendered.</p>
+<pre><code class="hljs css language-csharp"><span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">ShouldRender</span>(<span class="hljs-params"></span>)</span>
+{
+    <span class="hljs-keyword">var</span> renderUI = <span class="hljs-literal">true</span>;
+
+    <span class="hljs-keyword">return</span> renderUI;
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="component-disposal-with-idisposable"></a><a href="#component-disposal-with-idisposable" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Component disposal with IDisposable</h2>
+<p>If a component implements <a href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>, the <a href="https://docs.microsoft.com/dotnet/standard/garbage-collection/implementing-dispose">Dispose method</a> is called when the component is removed from the UI. The following component uses <code>@implements IDisposable</code> and the <code>Dispose</code> method:</p>
+<pre><code class="hljs css language-csharp">@<span class="hljs-keyword">using</span> System
+@implements IDisposable
+
+...
+
+@functions {
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Dispose</span>(<span class="hljs-params"></span>)</span>
+    {
+        ...
+    }
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="routing"></a><a href="#routing" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Routing</h2>
+<p>Routing in Blazor is achieved by providing a route template to each accessible component in the app.</p>
+<p>When a <em>*.cshtml</em> file with an <code>@page</code> directive is compiled, the generated class is given a <a href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.routeattribute">RouteAttribute</a> specifying the route template. At runtime, the router looks for component classes with a <code>RouteAttribute</code> and renders whichever component has a route template that matches the requested URL.</p>
+<p>Multiple route templates can be applied to a component. The following component responds to requests for <code>/BlazorRoute</code> and <code>/DifferentBlazorRoute</code>:</p>
+<p>[!code-cshtml<a href="common/samples/2.x/ComponentsSample/Pages/BlazorRoute.cshtml?start=1&amp;end=4"></a>]</p>
+<h2><a class="anchor" aria-hidden="true" id="route-parameters"></a><a href="#route-parameters" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Route parameters</h2>
+<p>Blazor components can receive route parameters from the route template provided in the <code>@page</code> directive. The Blazor client-side router uses route parameters to populate the corresponding component parameters.</p>
+<p><em>RouteParameter.cshtml</em>:</p>
+<p>[!code-cshtml<a href="common/samples/2.x/ComponentsSample/Pages/RouteParameter.cshtml?start=1&amp;end=9"></a>]</p>
+<p>Optional parameters aren't supported, so two <code>@page</code> directives are applied in the example above. The first permits navigation to the component without a parameter. The second <code>@page</code> directive takes the <code>{text}</code> route parameter and assigns the value to the <code>Text</code> property.</p>
+<h2><a class="anchor" aria-hidden="true" id="javascript-typescript-interop"></a><a href="#javascript-typescript-interop" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>JavaScript/TypeScript interop</h2>
+<p>To call JavaScript libraries or custom JavaScript/TypeScript code from .NET, the current approach is to register a named function with JavaScript/TypeScript. Place the <code>registerFunction</code> call in the <em>index.html</em> file or a JavaScript file (<em>*.js</em>) loaded by the <em>index.html</em> file. Place the inline JavaScript or <code>&lt;script&gt;</code> tag below <code>&lt;script type=&quot;blazor-boot&quot;&gt;&lt;/script&gt;</code>, and the JavaScript/TypeScript loads at the correct time and only executes once.</p>
+<pre><code class="hljs css language-javascript">Blazor.registerFunction(<span class="hljs-string">'doPrompt'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">message</span>) </span>{
+    <span class="hljs-keyword">return</span> prompt(message);
+});
+</code></pre>
+<p>Wrap the named function for calls from .NET:</p>
+<pre><code class="hljs css language-csharp"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">DoPrompt</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> message</span>)</span>
+{
+    <span class="hljs-keyword">return</span> RegisteredFunction.Invoke&lt;<span class="hljs-keyword">bool</span>&gt;(<span class="hljs-string">"doPrompt"</span>, message);
+}
+</code></pre>
+<p>This approach has the benefit of working with JavaScript build tools, such as <a href="https://webpack.js.org/">webpack</a>.</p>
+<p>The Mono team is working on a library that exposes standard browser APIs to .NET.</p>
+<h2><a class="anchor" aria-hidden="true" id="base-class-inheritance-for-a-code-behind-experience"></a><a href="#base-class-inheritance-for-a-code-behind-experience" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Base class inheritance for a &quot;code-behind&quot; experience</h2>
+<p>Blazor component files (<em>*.cshtml</em>) mix HTML markup and C# processing code in the same file. The <code>@inherits</code> directive can be used to provide Blazor with a &quot;code-behind&quot; experience that separates component markup from processing code.</p>
+<p>The <a href="https://github.com/aspnet/Blazor.Docs/tree/master/docs/components/common/samples/">sample app</a> shows how a component can inherit a base class, <code>BlazorRocksBase</code>, to provide the component's properties and methods.</p>
+<p><em>BlazorRocks.cshtml</em>:</p>
+<p>[!code-cshtml<a href="common/samples/2.x/ComponentsSample/Pages/BlazorRocks.cshtml?start=1&amp;end=8"></a>]</p>
+<p><em>BlazorRocksBase.cs</em>:</p>
+<p>[!code-csharp<a href="common/samples/2.x/ComponentsSample/Pages/BlazorRocksBase.cs"></a>]</p>
+<p>The base class should derive from <a href="/api/Microsoft.AspNetCore.Blazor.Components.BlazorComponent.html">BlazorComponent</a>.</p>
+<h2><a class="anchor" aria-hidden="true" id="razor-support"></a><a href="#razor-support" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Razor support</h2>
+<p><strong>Razor directives</strong></p>
+<p>Razor directives active with Blazor apps are shown in the following table.</p>
+<table>
+<thead>
+<tr><th>Directive</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><a href="https://docs.microsoft.com/aspnet/core/mvc/views/razor#functions">@functions</a></td><td>Adds a C# code block to a component.</td></tr>
+<tr><td><code>@implements</code></td><td>Implements an interface for the generated component class.</td></tr>
+<tr><td><a href="https://docs.microsoft.com/aspnet/core/mvc/views/razor#inherits">@inherits</a></td><td>Provides full control of the class that the component inherits.</td></tr>
+<tr><td><a href="https://docs.microsoft.com/aspnet/core/mvc/views/razor#inject">@inject</a></td><td>Enables service injection from the <a href="https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection">service container</a>. For more information, see <a href="https://docs.microsoft.com/aspnet/core/mvc/views/dependency-injection">Dependency injection into views</a>.</td></tr>
+<tr><td><code>@layout</code></td><td>Specifies a layout component. Layout components are used to avoid code duplication and inconsistency.</td></tr>
+<tr><td><a href="https://docs.microsoft.com/aspnet/core/mvc/razor-pages#razor-pages">@page</a></td><td>Specifies that the component should handle requests directly. The <code>@page</code> directive can be specified with a route and optional parameters. Unlike Razor Pages, the <code>@page</code> directive doesn't need to be the first directive at the top of the file.</td></tr>
+<tr><td><a href="https://docs.microsoft.com/aspnet/core/mvc/views/razor#using">@using</a></td><td>Adds the C# <code>using</code> directive to the generated component class.</td></tr>
+<tr><td><a href="https://docs.microsoft.com/aspnet/core/mvc/views/razor#tag-helpers">@addTagHelper</a></td><td>Use <code>@addTagHelper</code> to use a component in a different assembly than the app's assembly.</td></tr>
+</tbody>
+</table>
+<p><strong>Conditional attributes</strong></p>
+<p>Blazor conditionally renders attributes based on the .NET value. If the value is <code>false</code> or <code>null</code>, Blazor won't render the attribute. If the value is <code>true</code>, the attribute is rendered minimized.</p>
+<p>In the following example, <code>IsCompleted</code> determines if <code>checked</code> is rendered in the control's markup.</p>
+<pre><code class="hljs css language-cshtml">&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>="checkbox" checked="@IsCompleted" /&gt;
+
+@<span class="hljs-keyword">functions</span> {
+    <span class="hljs-built_in">public</span> <span class="hljs-type">bool</span> IsCompleted { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+}
+</code></pre>
+<p>If <code>IsCompleted</code> is <code>true</code>, the check box is rendered as:</p>
+<pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">checked</span> /&gt;</span>
+</code></pre>
+<p>If <code>IsCompleted</code> is <code>false</code>, the check box is rendered as:</p>
+<pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> /&gt;</span>
+</code></pre>
+<p><strong>Additional information on Razor</strong></p>
+<p>For more information on Razor, see the <a href="https://docs.microsoft.com/aspnet/core/mvc/views/razor">Razor syntax reference</a>. Note that not all of the features of Razor are available in Blazor at this time.</p>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#component-classes">Component classes</a></li><li><a href="#using-components">Using components</a></li><li><a href="#component-parameters">Component parameters</a></li><li><a href="#child-content">Child content</a></li><li><a href="#data-binding">Data binding</a></li><li><a href="#event-handling">Event handling</a></li><li><a href="#lifecycle-methods">Lifecycle methods</a></li><li><a href="#component-disposal-with-idisposable">Component disposal with IDisposable</a></li><li><a href="#routing">Routing</a></li><li><a href="#route-parameters">Route parameters</a></li><li><a href="#javascript-typescript-interop">JavaScript/TypeScript interop</a></li><li><a href="#base-class-inheritance-for-a-code-behind-experience">Base class inheritance for a &quot;code-behind&quot; experience</a></li><li><a href="#razor-support">Razor support</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/mixcore-logo.png" alt="mixcore docs" width="66"/></a><div class="footerSection"><h5>Docs</h5><a href="
+                /docs/en/installation">Getting Started</a><a href="
+                /docs/en/versioning">Versioning</a><a href="
+                /docs/en/translation">Localization</a><a href="
+                /docs/en/search">Adding Search</a></div><div class="footerSection"><h5>Community</h5><a href="/en/users">User Showcase</a></div><div class="footerSection"><h5>Social</h5><div class="social"><a class="github-button" href="https://github.com/mixcore/mix.core" data-count-href="https://github.com/mixcore/mix.core/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">mix.core</a></div></div></section><section class="copyright"><span>Copyright © 2019 mixcore</span></section></footer></div></body></html>
