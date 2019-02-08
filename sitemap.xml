@@ -4,17 +4,37 @@
 <url> <loc>https://mixcore.org/help</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/en/help" /> </url>
 <url> <loc>https://mixcore.org/index</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/en/index" /> </url>
 <url> <loc>https://mixcore.org/users</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/en/users" /> </url>
+<url> <loc>https://mixcore.org/versions</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/en/versions" /> </url>
 <url> <loc>https://mixcore.org/blog/2017/10/24/new-version-1.0.0</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>https://mixcore.org/blog/2017/09/26/adding-rss</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>https://mixcore.org/blog/2017/09/25/testing-rss</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>https://mixcore.org/blog/2017/04/10/blog-post-two</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
 <url> <loc>https://mixcore.org/blog/2016/03/11/blog-post</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://mixcore.org/docs/en/article-and-product</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/article-and-product" /> </url>
-<url> <loc>https://mixcore.org/docs/en/components/common/samples/2.x/ComponentsSample/README</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/components/common/samples/2.x/ComponentsSample/README" /> </url>
+<url> <loc>https://mixcore.org/docs/en/next/article-and-product</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/next/article-and-product" /> </url>
+<url> <loc>https://mixcore.org/docs/en/next/components/common/samples/2.x/ComponentsSample/README</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/next/components/common/samples/2.x/ComponentsSample/README" /> </url>
+<url> <loc>https://mixcore.org/docs/en/next/components/</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/next/components/" /> </url>
+<url> <loc>https://mixcore.org/docs/en/next/cultures</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/next/cultures" /> </url>
+<url> <loc>https://mixcore.org/docs/en/next/dependency-injection</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/next/dependency-injection" /> </url>
+<url> <loc>https://mixcore.org/docs/en/next/files</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/next/files" /> </url>
+<url> <loc>https://mixcore.org/docs/en/next/1st-step</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/next/1st-step" /> </url>
+<url> <loc>https://mixcore.org/docs/en/next/get-started</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/next/get-started" /> </url>
+<url> <loc>https://mixcore.org/docs/en/next/host-and-deploy/</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/next/host-and-deploy/" /> </url>
+<url> <loc>https://mixcore.org/docs/en/next/intro</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/next/intro" /> </url>
+<url> <loc>https://mixcore.org/docs/en/next/installation</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/next/installation" /> </url>
+<url> <loc>https://mixcore.org/docs/en/next/introduction/faq</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/next/introduction/faq" /> </url>
+<url> <loc>https://mixcore.org/docs/en/next/introduction/</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/next/introduction/" /> </url>
+<url> <loc>https://mixcore.org/docs/en/next/languages</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/next/languages" /> </url>
+<url> <loc>https://mixcore.org/docs/en/next/layouts</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/next/layouts" /> </url>
+<url> <loc>https://mixcore.org/docs/en/next/medias</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/next/medias" /> </url>
+<url> <loc>https://mixcore.org/docs/en/next/module</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/next/module" /> </url>
+<url> <loc>https://mixcore.org/docs/en/next/page</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/next/page" /> </url>
+<url> <loc>https://mixcore.org/docs/en/next/settings</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/next/settings" /> </url>
+<url> <loc>https://mixcore.org/docs/en/next/template</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/next/template" /> </url>
+<url> <loc>https://mixcore.org/docs/en/next/theme</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/next/theme" /> </url>
+<url> <loc>https://mixcore.org/docs/en/next/toc</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/next/toc" /> </url>
+<url> <loc>https://mixcore.org/docs/en/next/users</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/next/users" /> </url>
 <url> <loc>https://mixcore.org/docs/en/components/</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/components/" /> </url>
-<url> <loc>https://mixcore.org/docs/en/cultures</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/cultures" /> </url>
 <url> <loc>https://mixcore.org/docs/en/dependency-injection</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/dependency-injection" /> </url>
-<url> <loc>https://mixcore.org/docs/en/files</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/files" /> </url>
 <url> <loc>https://mixcore.org/docs/en/1st-step</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/1st-step" /> </url>
 <url> <loc>https://mixcore.org/docs/en/get-started</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/get-started" /> </url>
 <url> <loc>https://mixcore.org/docs/en/host-and-deploy/</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/host-and-deploy/" /> </url>
@@ -22,14 +42,6 @@
 <url> <loc>https://mixcore.org/docs/en/installation</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/installation" /> </url>
 <url> <loc>https://mixcore.org/docs/en/introduction/faq</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/introduction/faq" /> </url>
 <url> <loc>https://mixcore.org/docs/en/introduction/</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/introduction/" /> </url>
-<url> <loc>https://mixcore.org/docs/en/languages</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/languages" /> </url>
 <url> <loc>https://mixcore.org/docs/en/layouts</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/layouts" /> </url>
-<url> <loc>https://mixcore.org/docs/en/medias</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/medias" /> </url>
-<url> <loc>https://mixcore.org/docs/en/module</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/module" /> </url>
 <url> <loc>https://mixcore.org/docs/en/page</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/page" /> </url>
-<url> <loc>https://mixcore.org/docs/en/settings</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/settings" /> </url>
-<url> <loc>https://mixcore.org/docs/en/template</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/template" /> </url>
-<url> <loc>https://mixcore.org/docs/en/theme</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/theme" /> </url>
-<url> <loc>https://mixcore.org/docs/en/toc</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/toc" /> </url>
-<url> <loc>https://mixcore.org/docs/en/users</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/users" /> </url>
 </urlset>

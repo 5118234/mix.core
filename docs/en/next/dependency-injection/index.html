@@ -1,0 +1,160 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Dependency injection in Blazor · mixcore docs</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;h1&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;dependency-injection-in-blazor&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#dependency-injection-in-blazor&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dependency injection in Blazor&lt;/h1&gt;
+"/><meta name="docsearch:version" content="next"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Dependency injection in Blazor · mixcore docs"/><meta property="og:type" content="website"/><meta property="og:url" content="https://mixcore.org/index.html"/><meta property="og:description" content="&lt;h1&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;dependency-injection-in-blazor&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#dependency-injection-in-blazor&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dependency injection in Blazor&lt;/h1&gt;
+"/><meta property="og:image" content="https://mixcore.org/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://mixcore.org/img/docusaurus.png"/><link rel="shortcut icon" href="/img/mixcore-logo-nbg.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/en"><img class="logo" src="/img/mixcore-white.png" alt="mixcore docs"/><h2 class="headerTitleWithLogo">mixcore docs</h2></a><a href="/en/versions"><h3>next</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/en/next/intro" target="_self">Docs</a></li><li class=""><a href="/en/help" target="_self">Help</a></li><li class=""><a href="https://github.com/mixcore/mix.core/releases" target="_self">Download</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/mixcore/docs/tree/master/docs/dependency-injection.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">Dependency injection in Blazor</h1></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="dependency-injection-in-blazor"></a><a href="#dependency-injection-in-blazor" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dependency injection in Blazor</h1>
+<p>By <a href="https://www.timecockpit.com">Rainer Stropek</a></p>
+<p>[!INCLUDE<a href="~/includes/blazor-preview-notice.md"></a>]</p>
+<p>Blazor has <a href="https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection">dependency injection (DI)</a> built-in. Apps can use built-in services by having them injected into components. Apps can also define custom services and make them available via DI.</p>
+<h2><a class="anchor" aria-hidden="true" id="what-is-dependency-injection"></a><a href="#what-is-dependency-injection" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>What is dependency injection?</h2>
+<p>DI is a technique for accessing services configured in a central location. This can be useful to:</p>
+<ul>
+<li>Share a single instance of a service class across many components (known as a <em>singleton</em> service).</li>
+<li>Decouple components from particular concrete service classes and only reference abstractions. For example, an interface <code>IDataAccess</code> is implemented by a concrete class <code>DataAccess</code>. When a component uses DI to receive an <code>IDataAccess</code> implementation, the component isn't coupled to the concrete type. The implementation can be swapped, perhaps to a mock implementation in unit tests.</li>
+</ul>
+<p>Blazor's DI system is responsible for supplying instances of services to components. DI also resolves dependencies recursively so that services themselves can depend on further services. DI is configured during startup of the app. An example is shown later in this topic.</p>
+<h2><a class="anchor" aria-hidden="true" id="add-services-to-di"></a><a href="#add-services-to-di" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Add services to DI</h2>
+<p>After creating a new app, examine the <code>Main</code> method in <em>Program.cs</em>:</p>
+<pre><code class="hljs css language-csharp"><span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-keyword">string</span>[] args</span>)</span>
+{
+    <span class="hljs-keyword">var</span> serviceProvider = <span class="hljs-keyword">new</span> BrowserServiceProvider(services =&gt;
+    {
+        <span class="hljs-comment">// Add custom services here</span>
+    });
+
+    <span class="hljs-keyword">new</span> BrowserRenderer(serviceProvider).AddComponent&lt;App&gt;(<span class="hljs-string">"app"</span>);
+}
+</code></pre>
+<p><code>BrowserServiceProvider</code> receives an action where app services are added to DI. <code>services</code> references the underlying <a href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a>, which is a list of service descriptor objects (<a href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor">ServiceDescriptor</a>). Services are added by providing service descriptors to the service collection. The following code sample demonstrates the concept:</p>
+<pre><code class="hljs css language-csharp">@<span class="hljs-keyword">using</span> Microsoft.Extensions.<span class="hljs-function">DependencyInjection
+
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-keyword">string</span>[] args</span>)</span>
+{
+    <span class="hljs-keyword">var</span> serviceProvider = <span class="hljs-keyword">new</span> BrowserServiceProvider(services =&gt;
+    {
+        services.AddSingleton&lt;IDataAccess, DataAccess&gt;();
+    });
+
+    <span class="hljs-keyword">new</span> BrowserRenderer(serviceProvider).AddComponent&lt;App&gt;(<span class="hljs-string">"app"</span>);
+}
+</code></pre>
+<p>Services can be configured with the following lifetimes:</p>
+<table>
+<thead>
+<tr><th>Method</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><a href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor.singleton#Microsoft_Extensions_DependencyInjection_ServiceDescriptor_Singleton__1_System_Func_System_IServiceProvider___0__">Singleton</a></td><td>DI creates a <em>single instance</em> of the service. All components requiring this service receive a reference to this instance.</td></tr>
+<tr><td><a href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor.transient">Transient</a></td><td>Whenever a component requires this service, it receives a <em>new instance</em> of the service.</td></tr>
+<tr><td><a href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor.scoped">Scoped</a></td><td>Blazor doesn't currently have the concept of DI scopes. <code>Scoped</code> behaves like <code>Singleton</code>. Therefore, prefer <code>Singleton</code> and avoid <code>Scoped</code>.</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="default-services"></a><a href="#default-services" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Default services</h2>
+<p>Blazor provides default services that are automatically added to the service collection of an app. The following table shows a list of the default services currently provided by Blazor's <a href="/api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserServiceProvider.html">BrowserServiceProvider</a>.</p>
+<table>
+<thead>
+<tr><th>Method</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><a href="/api/Microsoft.AspNetCore.Blazor.Services.IUriHelper.html">IUriHelper</a></td><td>Helpers for working with URIs and navigation state (singleton).</td></tr>
+<tr><td><a href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></td><td>Provides methods for sending HTTP requests and receiving HTTP responses from a resource identified by a URI (singleton). Note that this instance of <code>HttpClient</code> uses the browser for handling the HTTP traffic in the background. <a href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclient.baseaddress">HttpClient.BaseAddress</a> is automatically set to the base URI prefix of the app.</td></tr>
+</tbody>
+</table>
+<p>Note that it is possible to use a custom services provider instead of the default <code>BrowserServiceProvider</code> that's added by the default template. A custom service provider doesn't automatically provide the default services listed in the table. Those services must be added to the new service provider explicitly.</p>
+<h2><a class="anchor" aria-hidden="true" id="request-a-service-in-a-component"></a><a href="#request-a-service-in-a-component" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Request a service in a component</h2>
+<p>Once services are added to the service collection, they can be injected into the components' Razor templates using the <code>@inject</code> Razor directive. <code>@inject</code> has two parameters:</p>
+<ul>
+<li>Type name: The type of the service to inject.</li>
+<li>Property name: The name of the property receiving the injected app service. Note that the property doesn't require manual creation. The compiler creates the property.</li>
+</ul>
+<p>Multiple <code>@inject</code> statements can be used to inject different services.</p>
+<p>The following example shows how to use <code>@inject</code>. The service implementing <code>Services.IDataAccess</code> is injected into the component's property <code>DataRepository</code>. Note how the code is only using the <code>IDataAccess</code> abstraction:</p>
+<pre><code class="hljs css language-csharp">@page <span class="hljs-string">"/customer-list"</span>
+@<span class="hljs-keyword">using</span> Services
+@inject IDataAccess DataRepository
+
+&lt;ul&gt;
+    @<span class="hljs-keyword">if</span> (Customers != <span class="hljs-literal">null</span>)
+    {
+        @<span class="hljs-keyword">foreach</span> (<span class="hljs-keyword">var</span> customer <span class="hljs-keyword">in</span> Customers)
+        {
+            &lt;li&gt;@customer.FirstName @customer.LastName&lt;/li&gt;
+        }
+    }
+&lt;/ul&gt;
+
+@functions {
+    <span class="hljs-keyword">private</span> IReadOnlyList&lt;Customer&gt; Customers;
+
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">async</span> Task <span class="hljs-title">OnInitAsync</span>(<span class="hljs-params"></span>)</span>
+    {
+        <span class="hljs-comment">// The property DataRepository received an implemenation</span>
+        <span class="hljs-comment">// of IDataAccess through dependency injection. Use </span>
+        <span class="hljs-comment">// DataRepository to obtain data from the server.</span>
+        Customers = <span class="hljs-keyword">await</span> DataRepository.GetAllCustomersAsync();
+    }
+}
+</code></pre>
+<p>Internally, the generated property (<code>DataRepository</code>) is decorated with the <a href="/api/Microsoft.AspNetCore.Blazor.Components.InjectAttribute.html">InjectAttribute</a> attribute. Typically, this attribute isn't used directly. If a base class is required for components and injected properties are also required for the base class, <code>InjectAttribute</code> can be manually added:</p>
+<pre><code class="hljs css language-csharp"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">ComponentBase</span> : <span class="hljs-title">BlazorComponent</span>
+{
+    <span class="hljs-comment">// Blazor's dependency injection works even if using the</span>
+    <span class="hljs-comment">// InjectAttribute in a component's base class.</span>
+    [<span class="hljs-meta">Inject</span>]
+    <span class="hljs-keyword">protected</span> IDataAccess DataRepository { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+    ...
+}
+</code></pre>
+<p>In components derived from the base class, the <code>@inject</code> directive isn't required. The <code>InjectAttribute</code> of the base class is sufficient:</p>
+<pre><code class="hljs css language-csharp">@page <span class="hljs-string">"/demo"</span>
+@inherits ComponentBase
+
+&lt;h1&gt;...&lt;/h1&gt;
+...
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="dependency-injection-in-services"></a><a href="#dependency-injection-in-services" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dependency injection in services</h2>
+<p>Complex services might require additional services. In the prior example, <code>DataAccess</code> might require Blazor's default service <code>HttpClient</code>. <code>@inject</code> or the <code>InjectAttribute</code> can't be used in services. <em>Constructor injection</em> must be used instead. Required services are added by adding parameters to the service's constructor. When dependency injection creates the service, it recognizes the services it requires in the constructor and provides them accordingly.</p>
+<p>The following code sample demonstrates the concept:</p>
+<pre><code class="hljs css language-csharp"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">DataAccess</span> : <span class="hljs-title">IDataAccess</span>
+{
+    <span class="hljs-comment">// The constructor receives an HttpClient via dependency</span>
+    <span class="hljs-comment">// injection. HttpClient is a default service offered by Blazor.</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">DataAccess</span>(<span class="hljs-params">HttpClient client</span>)</span>
+    {
+        ...
+    }
+    ...
+}
+</code></pre>
+<p>Note the following prerequisites for constructor injection:</p>
+<ul>
+<li>There must be one constructor whose arguments can all be fulfilled by dependency injection. Note that additional parameters not covered by DI are allowed if default values are specified for them.</li>
+<li>The applicable constructor must be <em>public</em>.</li>
+<li>There must only be one applicable constructor. In case of an ambiguity, DI throws an exception.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="additional-resources"></a><a href="#additional-resources" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Additional resources</h2>
+<ul>
+<li><a href="https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection">Dependency injection in ASP.NET Core</a></li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#what-is-dependency-injection">What is dependency injection?</a></li><li><a href="#add-services-to-di">Add services to DI</a></li><li><a href="#default-services">Default services</a></li><li><a href="#request-a-service-in-a-component">Request a service in a component</a></li><li><a href="#dependency-injection-in-services">Dependency injection in services</a></li><li><a href="#additional-resources">Additional resources</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/mixcore-white.png" alt="mixcore docs" width="66"/></a><div class="footerSection"><h5>Docs</h5><a href="
+                /docs/en/installation">Getting Started</a><a href="
+                /docs/en/versioning">Versioning</a><a href="
+                /docs/en/translation">Localization</a><a href="
+                /docs/en/search">Adding Search</a></div><div class="footerSection"><h5>Community</h5><a href="/en/users">User Showcase</a></div><div class="footerSection"><h5>Social</h5><div class="social"><a class="github-button" href="https://github.com/mixcore/mix.core" data-count-href="https://github.com/mixcore/mix.core/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">mix.core</a></div></div></section><section class="copyright"><span>Copyright © 2019 mixcore</span></section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: 'a8d14d2461c6df6cc5e628f6476e0eee',
+                indexName: 'mixcore_docs',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {"facetFilters":["language:en","version:next"]}
+              });
+            </script></body></html>
