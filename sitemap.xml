@@ -44,4 +44,5 @@
 <url> <loc>https://mixcore.org/docs/en/introduction/</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/introduction/" /> </url>
 <url> <loc>https://mixcore.org/docs/en/layouts</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/layouts" /> </url>
 <url> <loc>https://mixcore.org/docs/en/page</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/page" /> </url>
+<url> <loc>https://mixcore.org/docs/en/writing-post</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://mixcore.org/docs/en/writing-post" /> </url>
 </urlset>
